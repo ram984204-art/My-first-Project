@@ -7,11 +7,13 @@ pool:
 steps:
 - checkout: self
 
+# Step 1: Install dependencies (will work when you add package.json)
 - script: |
-    echo "Listing files..."
-    dir
-  displayName: "Check files"
+    echo "Installing dependencies..."
+    npm install
+  displayName: "Install dependencies"
 
+# Step 2: Run your application
 - script: |
     echo "Running app.js"
     node app.js
