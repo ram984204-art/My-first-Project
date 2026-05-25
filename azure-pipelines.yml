@@ -2,14 +2,14 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
 steps:
 - checkout: self
 
 - script: |
     echo "Listing files..."
-    ls -la
+    dir
   displayName: "Check files"
 
 - script: |
