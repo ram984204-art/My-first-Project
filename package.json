@@ -1,10 +1,11 @@
 {
-  "name": "my-first-project",
+  "name": "task-manager",
   "version": "1.0.0",
-  "description": "Sample Node app",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
